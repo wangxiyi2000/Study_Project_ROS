@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/xxx/Study_Project_ROS/demo03_ws/build/devel/setup.sh
