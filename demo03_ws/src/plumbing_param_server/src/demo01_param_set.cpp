@@ -9,6 +9,7 @@
                     setParam
             ros::param
                     set()
+     修改，只需要继续调研setParam或set函数，保证键是已经存在的，那么值会覆盖。
 */
 
 int main(int argc, char *argv[])
