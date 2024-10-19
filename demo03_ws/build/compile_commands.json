@@ -1,6 +1,11 @@
 [
 {
   "directory": "/home/xxx/Study_Project_ROS/demo03_ws/build",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"plumbing_param_server\\\" -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/demo03_param_del.dir/src/demo03_param_del.cpp.o -c /home/xxx/Study_Project_ROS/demo03_ws/src/plumbing_param_server/src/demo03_param_del.cpp",
+  "file": "/home/xxx/Study_Project_ROS/demo03_ws/src/plumbing_param_server/src/demo03_param_del.cpp"
+},
+{
+  "directory": "/home/xxx/Study_Project_ROS/demo03_ws/build",
   "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"plumbing_param_server\\\" -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/demo01_param_set.dir/src/demo01_param_set.cpp.o -c /home/xxx/Study_Project_ROS/demo03_ws/src/plumbing_param_server/src/demo01_param_set.cpp",
   "file": "/home/xxx/Study_Project_ROS/demo03_ws/src/plumbing_param_server/src/demo01_param_set.cpp"
 },
