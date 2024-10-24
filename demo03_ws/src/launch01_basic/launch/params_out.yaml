@@ -1,0 +1,19 @@
+bg_B: 255
+bg_G: 50
+bg_R: 100
+my_turtle: {background_b: 255, background_g: 86, background_r: 69, bg_B: 255, bg_G: 50,
+  bg_R: 100, param_B: 3.14}
+param_A: 100
+rosdistro: 'melodic
+
+  '
+roslaunch:
+  uris: {host_xxx_bqm5__36399: 'http://xxx-BQM5:36399/', host_xxx_bqm5__36891: 'http://xxx-BQM5:36891/',
+    host_xxx_bqm5__36983: 'http://xxx-BQM5:36983/', host_xxx_bqm5__38463: 'http://xxx-BQM5:38463/',
+    host_xxx_bqm5__39247: 'http://xxx-BQM5:39247/', host_xxx_bqm5__41371: 'http://xxx-BQM5:41371/',
+    host_xxx_bqm5__45425: 'http://xxx-BQM5:45425/', host_xxx_bqm5__45639: 'http://xxx-BQM5:45639/',
+    host_xxx_bqm5__45645: 'http://xxx-BQM5:45645/', host_xxx_bqm5__46275: 'http://xxx-BQM5:46275/'}
+rosversion: '1.14.13
+
+  '
+run_id: 272bd730-906f-11ef-955c-00e04c888326
