@@ -8,10 +8,10 @@ project(plumbing_test)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  geometry_msgs
   roscpp
   rospy
   std_msgs
+  turtlesim
 )
 
 ## System dependencies are found with CMake's conventions
@@ -71,7 +71,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
-#   geometry_msgs#   std_msgs
+#   std_msgs
 # )
 
 ################################################
@@ -106,7 +106,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES plumbing_test
-#  CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs
+#  CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
 )
 
@@ -134,8 +134,12 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/plumbing_test_node.cpp)
-add_executable(test01_pub_twist src/test01_pub_twist.cpp)
+add_executable(test02_sub_pos src/test02_sub_pos.cpp)
+add_executable(test03_service_client src/test03_service_client.cpp)
+add_executable(test04_param src/test04_param.cpp)
+add_executable(demo05_apis_pub src/demo05_apis_pub.cpp)
+add_executable(demo06_apis_sub src/demo06_apis_sub.cpp)
+add_executable(demo07_apis_time src/demo07_apis_time.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -145,10 +149,30 @@ add_executable(test01_pub_twist src/test01_pub_twist.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(test01_pub_twist ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(test02_sub_pos ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(test03_service_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(test04_param ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo05_apis_pub ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo06_apis_sub ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo07_apis_time ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(test01_pub_twist
+target_link_libraries(test02_sub_pos
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(test03_service_client
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(test04_param
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(demo05_apis_pub
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(demo06_apis_sub
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(demo07_apis_time
   ${catkin_LIBRARIES}
 )
 
